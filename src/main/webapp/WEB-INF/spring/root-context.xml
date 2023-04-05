@@ -36,7 +36,7 @@
 		<constructor-arg index="0" name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean> 
 	
-	<import resource="classpath:/mybatis/mybatis-context.xml"/>
+	<!-- <import resource="classpath:/mybatis/mybatis-context.xml"/> -->
 
 	<!-- file upload를 위한 bean 설정 -->
 	<!-- <bean name="multipartResolver"
