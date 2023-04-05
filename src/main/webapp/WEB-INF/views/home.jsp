@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,6 +60,8 @@
 					<li><a href="services.html">Services</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="login">Login</a></li>
+					<li><a href="signup">Sign up</a></li>
 				</ul>
 
 				
@@ -196,11 +197,9 @@
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-lg-6">
-					<h2 class="heading">Projects</h2>
+					<h2 class="heading">Login</h2>
 				</div>
-				<div class="col-lg-4">
-					<p>Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque.</p>
-				</div>
+				
 			</div>
 
 			<div class="row g-4">

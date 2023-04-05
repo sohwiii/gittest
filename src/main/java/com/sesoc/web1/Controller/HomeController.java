@@ -1,4 +1,4 @@
-package com.sesoc.web1;
+package com.sesoc.web1.Controller;
 
 
 import java.util.ArrayList;
@@ -27,6 +27,7 @@ public class HomeController {
 		
 		return "home";
 	}
+	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String method(Model m) {
 		logger.error("error로 출력함");
@@ -49,5 +50,7 @@ public class HomeController {
 		
 		return "view";
 	}
+
+	
 	
 }
