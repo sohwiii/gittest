@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sesoc.web1.dao.MemberDAO">
+
+<insert id="insertMember" parameterType="membervo">
+	INSERT INTO WEB_MEMBER 
+	(
+		NAME
+		, NICKNAME
+		, EMAIL
+		, PASSWORD
+		, ADDRESS
+		, ADDRESS2
+	) VALUES (
+		#{name}
+		, #{nickname}
+		, #{email}
+		, #{password}
+		, #{address}
+		, #{address2}
+	)
+</insert>
+</mapper>

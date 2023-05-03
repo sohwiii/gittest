@@ -1,0 +1,8 @@
+CREATE TABLE web_member (
+    name     VARCHAR2(20) NOT NULL,
+    nickname VARCHAR2(20) NOT NULL,
+    email    VARCHAR2(50) NOT NULL,
+    password VARCHAR2(20) NOT NULL,
+    address  VARCHAR2(50) NOT NULL,
+    address2 VARCHAR2(50)
+);

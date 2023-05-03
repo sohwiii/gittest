@@ -26,9 +26,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.sesoc.web1" use-default-filters="false">
-		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-	</context:component-scan>
+	<context:component-scan base-package="com.sesoc.web1" />
 	
 	
 </beans:beans>

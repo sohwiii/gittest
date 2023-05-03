@@ -46,18 +46,18 @@
     <div class="input-form-backgroud row">
       <div class="input-form col-md-12 mx-auto">
         <h4 class="mb-3">회원가입</h4>
-        <form class="validation-form" novalidate>
+        <form class="validation-form" id="signupForm" action="/web1/member/signup.do" method="post">
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name">이름</label>
-              <input type="text" class="form-control" id="name" placeholder="" value="" required>
+              <input type="text" class="form-control" id="name" name="name" placeholder="" value="" required>
               <div class="invalid-feedback">
                 이름을 입력해주세요.
               </div>
             </div>
             <div class="col-md-6 mb-3">
               <label for="nickname">별명</label>
-              <input type="text" class="form-control" id="nickname" placeholder="" value="" required>
+              <input type="text" class="form-control" id="nickname" name="nickname" placeholder="" value="" required>
               <div class="invalid-feedback">
                 별명을 입력해주세요.
               </div>
@@ -66,15 +66,23 @@
 
           <div class="mb-3">
             <label for="email">이메일</label>
-            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
             <div class="invalid-feedback">
               이메일을 입력해주세요.
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <label for="password">비밀번호</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="" required>
+            <div class="invalid-feedback">
+              비밀번호를 입력해주세요.
             </div>
           </div>
 
           <div class="mb-3">
             <label for="address">주소</label>
-            <input type="text" class="form-control" id="address" placeholder="서울특별시 강남구" required>
+            <input type="text" class="form-control" id="address" name="address" placeholder="서울특별시 강남구" required>
             <div class="invalid-feedback">
               주소를 입력해주세요.
             </div>
@@ -82,7 +90,7 @@
 
           <div class="mb-3">
             <label for="address2">상세주소<span class="text-muted">&nbsp;(필수 아님)</span></label>
-            <input type="text" class="form-control" id="address2" placeholder="상세주소를 입력해주세요.">
+            <input type="text" class="form-control" id="address2" name="address2" placeholder="상세주소를 입력해주세요.">
           </div>
 
           <!--  <div class="row">

@@ -1,4 +1,4 @@
-package com.sesoc.web1.Controller;
+package com.sesoc.web1.controller;
 
 
 import java.util.ArrayList;
