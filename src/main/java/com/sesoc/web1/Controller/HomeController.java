@@ -21,11 +21,46 @@ public class HomeController {
 	/**
 	 * 메인 화면
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = {"/","/home.do"}, method = RequestMethod.GET)
 	public String home() {
 		logger.info("콘솔로 출력하는 메시지");
 		
 		return "home";
+	}
+	
+	@RequestMapping(value = "/login.do", method = RequestMethod.GET)
+	public String login() {
+		logger.info("로그인 페이지");
+		
+		return "login";
+	}
+	
+	@RequestMapping(value = "/signup.do", method = RequestMethod.GET)
+	public String signup() {
+		logger.info("회원가입 페이지");
+		
+		return "signup";
+	}
+	
+	@RequestMapping(value = "/contact.do", method = RequestMethod.GET)
+	public String contact() {
+		logger.info("컨텍트 페이지");
+		
+		return "contact";
+	}
+	
+	@RequestMapping(value = "/services.do", method = RequestMethod.GET)
+	public String services() {
+		logger.info("서비스 페이지");
+		
+		return "services";
+	}
+	
+	@RequestMapping(value = "/projects.do", method = RequestMethod.GET)
+	public String projects() {
+		logger.info("프로젝트 페이지");
+		
+		return "projects";
 	}
 	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)

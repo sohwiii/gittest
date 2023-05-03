@@ -1,17 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"     pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<meta name="author" content="Untree.co">
-	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="shortcut icon" href="favicon.png">
 
 	<meta name="description" content="" />
 	<meta name="keywords" content="bootstrap, bootstrap5" />
-
+	
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 
@@ -23,10 +24,6 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>Archiark &mdash; Free Bootstrap 5 Website Template by Untree.co</title>
-	
-	<link rel="stylesheet" href="css/login.css">
-	
-	
 </head>
 <body>
 
@@ -42,10 +39,10 @@
 	<nav class="site-nav">
 		<div class="container">
 			<div class="site-navigation">
-				<a href="home.do" class="logo m-0 float-start">DDiet</a>
+				<a href="home.do" class="logo m-0 float-start">Archiark<span class="text-primary">.</span> </a>
 
 				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start">
-					<li class="active"><a href="home.do">Home</a></li>
+					<li><a href="home.do">Home</a></li>
 					<li class="has-children">
 						<a href="projects.do">Projects</a>
 						<ul class="dropdown">
@@ -62,9 +59,9 @@
 						</ul>
 					</li>
 					<li><a href="services.do">Services</a></li>
-					<li><a href="contact.do">Contact Us</a></li>
+					<li class="active"><a href="contact.do">Contact Us</a></li>
 					<li><a href="login.do">Login</a></li>
-					<li><a href="signup.do">Signup</a></li>
+					<li><a href="signup.do">Sign up</a></li>
 				</ul>
 
 				
@@ -73,54 +70,84 @@
 					<span></span>
 				</a>
 				<ul class="site-menu float-end d-none d-md-block">
-					<li><a href="#" class="d-flex align-items-center text-white h2 fw-bold"><span class="icon-phone me-2"></span> <span>010 - 4981 - 8698</span></a></li>
+					<li><a href="#" class="d-flex align-items-center text-white h2 fw-bold"><span class="icon-phone me-2"></span> <span>+ 2 292 4392 327</span></a></li>
 				</ul>
 
 			</div>
 		</div>
 	</nav>
 
-	<div class="hero-2 overlay" style="background-image: url('images/img_2.jpg'); height:auto;">
-	
-
-	</div> 
-
-<div class="section sec-5">
+	<div class="hero-2 overlay" style="background-image: url('images/img_6.jpg');">
 		<div class="container">
-			<div class="row mb-5">
-				<div class="col-lg-6">
-					<h2 class="heading">Login</h2>
+			<div class="row align-items-center">
+				<div class="col-lg-5 mx-auto ">
+					<h1 class="mb-5 text-center"><span>Contact Us</span></h1>
+
+
+					<div class="intro-desc text-left">
+						<div class="line"></div>
+						<p>Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque.</p>
+					</div>
 				</div>
-				
-		<html>
-    <head>
-        <meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
-    </head>
-<body>
-<header>
-            <h2>Login</h2>
-</header>
-
-        <form action="" method="POST">
-            <div class="input-box">
-                 <input id="username" type="text" name="username" placeholder="아이디">
-                <label for="username">아이디</label>
-            </div>
-            <div class="input-box">
-                <input id="password" type="password" name="password" placeholder="비밀번호">
-                <label for="password">비밀번호</label>
-            </div>
-            <div id="forgot">비밀번호 찾기
-            </div>
-            <input type="submit" value="로그인">
-       
-        </form> 
-
 			</div>
 		</div>
-		
-</div>
-						
+	</div>
+
+
+	<div class="section sec-contact">
+		<div class="container">
+			<div class="row mb-5 justify-content-center text-center">
+				<div class="col-lg-5">
+					<h2 class="heading">Get in touch</h2>
+					<p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+				</div>
+			</div>
+			<form class="row">
+
+				<div class="col-md-6 col-lg-6">
+					<div class="mb-3">
+						<label for="name" class="ps-3 mb-2">Name</label>
+						<input type="text" class="form-control" id="name">
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-6">
+					<div class="mb-3">
+						<label for="email" class="ps-3 mb-2">Email</label>
+						<input type="text" class="form-control" id="email">
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-6">
+					<div class="mb-3">
+						<label for="phone" class="ps-3 mb-2">Phone</label>
+						<input type="text" class="form-control" id="phone">
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-6">
+					<div class="mb-3">
+						<label for="subject" class="ps-3 mb-2">Subject</label>
+						<input type="text" class="form-control" id="subject">
+					</div>
+				</div>
+
+				<div class="col-md-12 col-lg-12">
+					<div class="mb-3">
+						<label for="message" class="ps-3 mb-2">Message</label>
+						<textarea class="form-control" name="" id="message" cols="30" rows="7"></textarea>
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<input type="submit" value="Send message" class="btn btn-primary">
+				</div>
+
+			</form>
+		</div>
+	</div>
+	
+
 	<div class="site-footer bg-light">
 		<div class="container">
 
@@ -152,7 +179,7 @@
 						<div class="col-6 col-sm-6 col-md-4">
 							<div class="widget">
 								<ul class="links list-unstyled">
-									<li><a href="home">Home</a></li>
+									<li><a href="#">Home</a></li>
 									<li><a href="#">Services</a></li>
 									<li><a href="#">Work</a></li>
 									<li><a href="#">Process</a></li>

@@ -38,12 +38,12 @@
 	<nav class="site-nav">
 		<div class="container">
 			<div class="site-navigation">
-				<a href="index.html" class="logo m-0 float-start">TechON</a>
+				<a href="home.do" class="logo m-0 float-start">DDiet</a>
 
 				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start">
-					<li class="active"><a href="index.html">Home</a></li>
+					<li class="active"><a href="home.do">Home</a></li>
 					<li class="has-children">
-						<a href="projects.html">Projects</a>
+						<a href="projects.do">Projects</a>
 						<ul class="dropdown">
 							<li><a href="#">Commercial Building</a></li>
 							<li><a href="#">Cultural Lifestyle</a></li>
@@ -57,11 +57,10 @@
 							</li>
 						</ul>
 					</li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-					<li><a href="login">Login</a></li>
-					<li><a href="signup">Sign up</a></li>
+					<li><a href="services.do">Services</a></li>
+					<li><a href="contact.do">Contact Us</a></li>
+					<li><a href="login.do">Login</a></li>
+					<li><a href="signup.do">Sign up</a></li>
 				</ul>
 
 				
@@ -70,7 +69,7 @@
 					<span></span>
 				</a>
 				<ul class="site-menu float-end d-none d-md-block">
-					<li><a href="#" class="d-flex align-items-center text-white h2 fw-bold"><span class="icon-phone me-2"></span> <span>010 - 4981 - 8698</span></a></li>
+					<li><a href="#" class="d-flex align-items-center text-white h2 fw-bold"><span class="icon-phone me-2"></span> <span>010 - 5034 - 3580</span></a></li>
 				</ul>
 
 			</div>
@@ -81,7 +80,7 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-5 mx-auto">
-					<h1 ><span>찾았다! <br> 당신을 위한 정부지원금</span></h1>
+					<h1 ><span>안녕!</span></h1>
 
 					<div class="play-vid">
 						<a href="https://www.youtube.com/watch?v=mwtbEGNABWU" class="play glightbox">
