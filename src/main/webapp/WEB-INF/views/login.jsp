@@ -28,6 +28,10 @@
 	
 	
 </head>
+<scrip>
+	var errorMsg = "<c:out value='${errorMsg}'/>";
+	alert(errorMsg);
+</scrip>
 <body>
 
 	<div class="site-mobile-menu site-navbar-target">
@@ -45,7 +49,7 @@
 				<a href="home.do" class="logo m-0 float-start">DDiet</a>
 
 				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start">
-					<li class="active"><a href="home.do">Home</a></li>
+					<li><a href="home.do">Home</a></li>
 					<li class="has-children">
 						<a href="projects.do">Projects</a>
 						<ul class="dropdown">
@@ -63,8 +67,8 @@
 					</li>
 					<li><a href="services.do">Services</a></li>
 					<li><a href="contact.do">Contact Us</a></li>
-					<li><a href="login.do">Login</a></li>
-					<li><a href="signup.do">Signup</a></li>
+					<li class="active"><a href="login.do">Login</a></li>
+					<li><a href="signup.do">Sign up</a></li>
 				</ul>
 
 				
@@ -73,7 +77,7 @@
 					<span></span>
 				</a>
 				<ul class="site-menu float-end d-none d-md-block">
-					<li><a href="#" class="d-flex align-items-center text-white h2 fw-bold"><span class="icon-phone me-2"></span> <span>010 - 4981 - 8698</span></a></li>
+					<li><a href="#" class="d-flex align-items-center text-white h2 fw-bold"><span class="icon-phone me-2"></span> <span>010 - 5034 - 3580</span></a></li>
 				</ul>
 
 			</div>
@@ -101,10 +105,10 @@
             <h2>Login</h2>
 </header>
 
-        <form action="" method="POST">
+        <form action="/web1/member/login.do" method="POST">
             <div class="input-box">
-                 <input id="username" type="text" name="username" placeholder="아이디">
-                <label for="username">아이디</label>
+                 <input id="userid" type="text" name="userid" placeholder="아이디">
+                <label for="userid">아이디</label>
             </div>
             <div class="input-box">
                 <input id="password" type="password" name="password" placeholder="비밀번호">

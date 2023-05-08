@@ -2,7 +2,7 @@ package com.sesoc.web1.vo;
 
 public class MemberVO {
 	private String name;
-	private String nickname;
+	private String userid;
 	private String email;
 	private String password;
 	private String address;
@@ -12,10 +12,10 @@ public class MemberVO {
 		
 	}
 	
-	public MemberVO(String name, String nickname, String email, String password, String address, String address2) {
+	public MemberVO(String name, String userid, String email, String password, String address, String address2) {
 		super();
 		this.name = name;
-		this.nickname = nickname;
+		this.userid = userid;
 		this.email = email;
 		this.password = password;
 		this.address = address;
@@ -30,12 +30,12 @@ public class MemberVO {
 		this.name = name;
 	}
 
-	public String getNickname() {
-		return nickname;
+	public String getUserid() {
+		return userid;
 	}
 
-	public void setNickname(String nickname) {
-		this.nickname = nickname;
+	public void setUserid(String userid) {
+		this.userid = userid;
 	}
 
 	public String getEmail() {
@@ -72,7 +72,7 @@ public class MemberVO {
 
 	@Override
 	public String toString() {
-		return "MemberVO [name=" + name + ", nickname=" + nickname + ", email=" + email + ", password=" + password
+		return "MemberVO [name=" + name + ", userid=" + userid + ", email=" + email + ", password=" + password
 				+ ", address=" + address + ", address2=" + address2 + "]";
 	}
 

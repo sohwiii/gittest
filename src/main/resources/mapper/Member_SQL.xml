@@ -9,18 +9,27 @@
 	INSERT INTO WEB_MEMBER 
 	(
 		NAME
-		, NICKNAME
+		, USERID
 		, EMAIL
 		, PASSWORD
 		, ADDRESS
 		, ADDRESS2
 	) VALUES (
 		#{name}
-		, #{nickname}
+		, #{userid}
 		, #{email}
 		, #{password}
 		, #{address}
 		, #{address2}
 	)
 </insert>
+
+<select id="getMember" parameterType="string" resultType="membervo">
+	SELECT
+	    *
+	FROM
+	    WEB_MEMBER
+	WHERE
+	    USERID = #{userid}
+	</select>
 </mapper>

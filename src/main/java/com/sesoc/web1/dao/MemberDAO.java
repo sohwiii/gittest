@@ -9,6 +9,8 @@ public interface MemberDAO {
 
 	//회원가입 처리
 	public int insertMember(MemberVO membervo) throws Exception;
+	//로그인 처리
+	public MemberVO getMember (String userid) throws Exception;
 	
 	
 }

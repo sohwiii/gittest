@@ -21,4 +21,13 @@ public class MemberService {
 		return result;
 	}
 
+	public MemberVO getMember(String userid) throws Exception {
+		MemberDAO memberDAO = sqlSession.getMapper(MemberDAO.class);
+		MemberVO membervo = null;
+		
+		membervo = memberDAO.getMember(userid);
+		
+		return membervo;
+	}
+
 }

@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,6 +25,9 @@
 
 	<title>Archiark &mdash; Free Bootstrap 5 Website Template by Untree.co</title>
 </head>
+<script>
+
+</script>
 <body>
 
 	<div class="site-mobile-menu site-navbar-target">
@@ -59,8 +63,6 @@
 					</li>
 					<li><a href="services.do">Services</a></li>
 					<li><a href="contact.do">Contact Us</a></li>
-					<li><a href="login.do">Login</a></li>
-					<li><a href="signup.do">Sign up</a></li>
 				</ul>
 
 				
@@ -68,10 +70,18 @@
 				<a href="#" class="burger ml-auto float-end site-menu-toggle light js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
 					<span></span>
 				</a>
-				<ul class="site-menu float-end d-none d-md-block">
-					<li><a href="#" class="d-flex align-items-center text-white h2 fw-bold"><span class="icon-phone me-2"></span> <span>010 - 5034 - 3580</span></a></li>
-				</ul>
-
+				<c:if test="${sessionScope.loginId != null}">
+					<ul class="site-menu float-end d-none d-md-block">
+						<li><a href="#" class="d-flex align-items-center text-white h2 fw-bold"><span>${sessionScope.loginName} (${sessionScope.loginId})님 안녕!</span></a></li>
+						<li><a href="/web1/member/logout.do">Logout</li>
+					</ul>
+				</c:if>
+				<c:if test="${sessionScope.loginId == null}">
+					<ul class="site-menu float-end d-none d-md-block">
+						<li><a href="login.do">Login</a></li>
+						<li><a href="signup.do">Sign up</a></li>
+					</ul>
+				</c:if>
 			</div>
 		</div>
 	</nav>
